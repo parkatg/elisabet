@@ -53,8 +53,7 @@
         background-color: #575757;
     }
 </style>
-</head>
-<body>
+
 
 <div class="navbar">
     <a href="#inicio">Nike</a>
@@ -80,7 +79,7 @@
     th, td {
       border: 1px solid #555;
       padding: 10px;
-      text-align: center;
+      
     }
     th {
       background-color: #f4f4f4;
@@ -91,50 +90,53 @@
   </style>
 
 
-  <table>
-    <caption>Inventario de Productos</caption>
     <hr>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
 
-    <thead>
-      <tr>
-        <th>Código</th>
-        <th>Nombre del Producto</th>
-        <th>Categoría</th>
-        <th>Stock Disponible</th>
-        <th>Precio Unitario</th>
-        <th>Total</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>PRD-001</td>
-        <td>Monitor Samsung 24"</td>
-        <td>Electrónica</td>
-        <td>15</td>
-        <td>$120.00</td>
-        <td>$1,800.00</td>
-      </tr>
-      <tr>
-        <td>PRD-002</td>
-        <td>Teclado Mecánico</td>
-        <td>Accesorios</td>
-        <td>30</td>
-        <td>$45.00</td>
-        <td>$1,350.00</td>
-      </tr>
-      <tr>
-        <td>PRD-003</td>
-        <td>Impresora HP</td>
-        <td>Oficina</td>
-        <td>8</td>
-        <td>$150.00</td>
-        <td>$1,200.00</td>
-      </tr>
-      
-    </tbody>
-  </table>
+    /* Contenedor solo para las imágenes */
+    .imagenes-centradas {
+        display: flex;
+        justify-content: center; /* Centra las imágenes */
+        gap: 20px; /* Espacio entre imágenes */
+        flex-wrap: wrap; /* Permite que bajen si no caben */
+    }
+
+    /* Imagen cuadrada con líneas */
+    .click-image {
+        border: 2px solid black;
+        width: 200px;
+        height: 200px;
+        background-image: linear-gradient(90deg, transparent 49%, black 49%, black 51%, transparent 51%),
+                          linear-gradient(0deg, transparent 49%, black 49%, black 51%, transparent 51%);
+        background-size: 100% 100%;
+        display: block;
+    }
+</style>
+</head>
+<body>
+
+<!-- Solo las imágenes centradas -->
+<div class="imagenes-centradas">
+    <a href="https://www.ejemplo1.com">
+        <img src="https://img.freepik.com/psd-gratis/cerca-retrato-expresion-nino_23-2150193289.jpg?semt=ais_hybrid&w=740&q=80" alt="Imagen 1" class="click-image">
+    </a>
+    <a href="https://www.ejemplo2.com">
+        <img src="https://media.istockphoto.com/id/1292415309/es/foto/chica-divertida-sobre-fondo-rosa.jpg?s=612x612&w=0&k=20&c=InnEikiThRGhjcmC4RI0bMpKjkbFPnZCfpKmQdN9XaI=" alt="Imagen 2" class="click-image">
+    </a>
+    <a href="https://www.ejemplo3.com">
+        <img src="https://media.istockphoto.com/id/1267280602/es/foto/hombre-africano-agitando-pu%C3%B1o-gesturing-s%C3%AD-celebrando-el-%C3%A9xito-studio-shot.jpg?s=612x612&w=0&k=20&c=3RDRlBYacgrQeyfY1foo2UcjjKMbNKqrZdUcdP0bN_s=" alt="Imagen 3" class="click-image">
+    </a>
+    <a href="https://www.ejemplo4.com">
+        <img src="https://img.freepik.com/fotos-premium/imagen-mujer-joven-feliz-aislada-sobre-pared-amarilla-mostrando-copyspace-apuntando_171337-48157.jpg" alt="Imagen 4" class="click-image">
+    </a>
+</div>
 
 
+    
 <style>
     body {
       font-family: Arial, sans-serif;
@@ -186,10 +188,10 @@
 
   <div class="producto">
     <img src="https://www.sportline.com.co/media/catalog/product/f/b/fb2208-003_phsrh001-1000.png?optimize=medium&bg-color=255,255,255&fit=bounds&height=&width=&canvas=:&format=jpeg" alt="Producto 1">
-    <h3>Camisa Deportiva</h3>
-    <p>Camisa cómoda para entrenar.</p>
-    <p class="precio">$39.900</p>
-    <a href="#" class="boton">Comprar</a>
+    <h3>Nike casual</h3>
+    <p>Tenis Deportivas</p>
+    <p class="precio">$139.900</p>
+    <button onclick="agregarAlCarrito('Nike Casual', 139.900)">Comprar</button>
   </div>
 
   <div class="producto">
